@@ -3,7 +3,7 @@ using NerdStore.Core.DomainObjects;
 
 namespace NerdStore.Catalogo.Domain.Events
 {
-    class ProdutoAbaixoEstoqueEvent : DomainEvent
+    public class ProdutoAbaixoEstoqueEvent : DomainEvent
     {
         public int QuantidadeRestante { get; set; }
 

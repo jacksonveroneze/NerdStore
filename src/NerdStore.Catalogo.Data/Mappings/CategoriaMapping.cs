@@ -14,7 +14,6 @@ namespace NerdStore.Catalogo.Data.Mappings
                 .IsRequired()
                 .HasColumnType("varchar(250)");
 
-            // 1 : N => Categorias : Produtos
             builder.HasMany(c => c.Produtos)
                 .WithOne(p => p.Categoria)
                 .HasForeignKey(p => p.CategoriaId);

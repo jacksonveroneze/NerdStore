@@ -6,8 +6,7 @@ namespace NerdStore.Catalogo.Application.ViewModels
 {
     public class ProdutoViewModel
     {
-        [Key]
-        public Guid Id { get; set; }
+        [Key] public Guid Id { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public Guid CategoriaId { get; set; }

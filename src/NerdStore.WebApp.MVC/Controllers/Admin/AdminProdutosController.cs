@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using NerdStore.Catalogo.Application.Services.NerdStore.Catalogo.Application.Services;
+using NerdStore.Catalogo.Application.Services;
 using NerdStore.Catalogo.Application.ViewModels;
 
 namespace NerdStore.WebApp.MVC.Controllers.Admin

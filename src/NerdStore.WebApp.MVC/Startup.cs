@@ -24,7 +24,8 @@ namespace NerdStore.WebApp.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<CatalogoContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+                options
+                    .UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddAutoMapper(typeof(DomainToViewModelMappingProfile), typeof(ViewModelToDomainMappingProfile));
 
@@ -46,6 +47,7 @@ namespace NerdStore.WebApp.MVC
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

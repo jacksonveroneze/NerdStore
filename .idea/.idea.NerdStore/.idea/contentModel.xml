@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_NerdStore.-1103153090.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p=".editorconfig" t="Include" />
+      <e p="NerdStore.sln" t="IncludeFlat" />
+      <e p="Solution Items" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src" t="Include">
+        <e p="Catalogo" t="Include" />
+        <e p="Core" t="Include" />
+        <e p="NerdStore.Catalogo.Application" t="IncludeRecursive">
+          <e p="AutoMapper" t="Include">
+            <e p="DomainToViewModelMappingProfile.cs" t="Include" />
+            <e p="ViewModelToDomainMappingProfile.cs" t="Include" />
+          </e>
+          <e p="NerdStore.Catalogo.Application.csproj" t="IncludeRecursive" />
+          <e p="Services" t="Include">
+            <e p="IProdutoAppService.cs" t="Include" />
+            <e p="ProdutoAppService.cs" t="Include" />
+          </e>
+          <e p="ViewModels" t="Include">
+            <e p="CategoriaViewModel.cs" t="Include" />
+            <e p="ProdutoViewModel.cs" t="Include" />
+          </e>
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="NerdStore.Catalogo.Application.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="NerdStore.Catalogo.Data" t="IncludeRecursive">
+          <e p="CatalogoContext.cs" t="Include" />
+          <e p="Mappings" t="Include">
+            <e p="CategoriaMapping.cs" t="Include" />
+            <e p="ProdutoMapping.cs" t="Include" />
+          </e>
+          <e p="NerdStore.Catalogo.Data.csproj" t="IncludeRecursive" />
+          <e p="Repository" t="Include">
+            <e p="ProdutoRepository.cs" t="Include" />
+          </e>
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="NerdStore.Catalogo.Data.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="NerdStore.Catalogo.Domain" t="IncludeRecursive">
+          <e p="Categoria.cs" t="Include" />
+          <e p="Dimensoes.cs" t="Include" />
+          <e p="EstoqueService.cs" t="Include" />
+          <e p="Events" t="Include">
+            <e p="ProdutoAbaixoEstoqueEvent.cs" t="Include" />
+            <e p="ProdutoEventHandler.cs" t="Include" />
+          </e>
+          <e p="IEstoqueService.cs" t="Include" />
+          <e p="IProdutoRepository.cs" t="Include" />
+          <e p="NerdStore.Catalogo.Domain.csproj" t="IncludeRecursive" />
+          <e p="Produto.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="NerdStore.Catalogo.Domain.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="NerdStore.Core" t="IncludeRecursive">
+          <e p="Bus" t="Include">
+            <e p="IMediatrHandler.cs" t="Include" />
+            <e p="MediatrHandler.cs" t="Include" />
+          </e>
+          <e p="Data" t="Include">
+            <e p="IRepository.cs" t="Include" />
+            <e p="IUnitOfWork.cs" t="Include" />
+          </e>
+          <e p="DomainObjects" t="Include">
+            <e p="DomainEvent.cs" t="Include" />
+            <e p="DomainException.cs" t="Include" />
+            <e p="Entity.cs" t="Include" />
+            <e p="IAggregateRoot.cs" t="Include" />
+            <e p="Validations.cs" t="Include" />
+          </e>
+          <e p="Messages" t="Include">
+            <e p="Event.cs" t="Include" />
+            <e p="Message.cs" t="Include" />
+          </e>
+          <e p="NerdStore.Core.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="NerdStore.Core.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="NerdStore.WebApp.MVC" t="IncludeRecursive">
+          <e p="Controllers" t="Include">
+            <e p="Admin" t="Include">
+              <e p="AdminProdutosController.cs" t="Include" />
+            </e>
+            <e p="HomeController.cs" t="Include" />
+            <e p="VitrineController.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="ErrorViewModel.cs" t="Include" />
+          </e>
+          <e p="NerdStore.WebApp.MVC.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Setup" t="Include">
+            <e p="DependencyInjection.cs" t="Include" />
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="Views" t="Include">
+            <e p="AdminProdutos" t="Include">
+              <e p="AtualizarProduto.cshtml" t="Include" />
+              <e p="Estoque.cshtml" t="Include" />
+              <e p="Index.cshtml" t="Include" />
+              <e p="NovoProduto.cshtml" t="Include" />
+            </e>
+            <e p="Home" t="Include">
+              <e p="Index.cshtml" t="Include" />
+              <e p="Privacy.cshtml" t="Include" />
+            </e>
+            <e p="Shared" t="Include">
+              <e p="Error.cshtml" t="Include" />
+              <e p="_CookieConsentPartial.cshtml" t="Include" />
+              <e p="_Layout.cshtml" t="Include" />
+              <e p="_LoginPartial.cshtml" t="Include" />
+              <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            </e>
+            <e p="Vitrine" t="Include">
+              <e p="Index.cshtml" t="Include" />
+              <e p="ProdutoDetalhe.cshtml" t="Include" />
+            </e>
+            <e p="_ViewImports.cshtml" t="Include" />
+            <e p="_ViewStart.cshtml" t="Include" />
+          </e>
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="NerdStore.WebApp.MVC.AssemblyInfo.cs" t="Include" />
+                <e p="NerdStore.WebApp.MVC.RazorAssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="wwwroot" t="Include">
+            <e p="Images" t="Include">
+              <e p="camiseta1.jpg" t="Include" />
+              <e p="camiseta2.jpg" t="Include" />
+              <e p="camiseta3.jpg" t="Include" />
+              <e p="camiseta4.jpg" t="Include" />
+              <e p="caneca1.jpg" t="Include" />
+              <e p="caneca2.jpg" t="Include" />
+              <e p="caneca3.jpg" t="Include" />
+              <e p="caneca4.jpg" t="Include" />
+            </e>
+            <e p="css" t="Include">
+              <e p="site.css" t="Include" />
+            </e>
+            <e p="favicon.ico" t="Include" />
+            <e p="js" t="Include">
+              <e p="site.js" t="Include" />
+            </e>
+            <e p="lib" t="Include">
+              <e p="bootstrap" t="Include">
+                <e p="LICENSE" t="Include" />
+                <e p="dist" t="Include">
+                  <e p="css" t="Include">
+                    <e p="bootstrap-grid.css" t="Include" />
+                    <e p="bootstrap-grid.css.map" t="Include" />
+                    <e p="bootstrap-grid.min.css" t="Include" />
+                    <e p="bootstrap-grid.min.css.map" t="Include" />
+                    <e p="bootstrap-reboot.css" t="Include" />
+                    <e p="bootstrap-reboot.css.map" t="Include" />
+                    <e p="bootstrap-reboot.min.css" t="Include" />
+                    <e p="bootstrap-reboot.min.css.map" t="Include" />
+                    <e p="bootstrap.css" t="Include" />
+                    <e p="bootstrap.css.map" t="Include" />
+                    <e p="bootstrap.min.css" t="Include" />
+                    <e p="bootstrap.min.css.map" t="Include" />
+                  </e>
+                  <e p="js" t="Include">
+                    <e p="bootstrap.bundle.js" t="Include" />
+                    <e p="bootstrap.bundle.js.map" t="Include" />
+                    <e p="bootstrap.bundle.min.js" t="Include" />
+                    <e p="bootstrap.bundle.min.js.map" t="Include" />
+                    <e p="bootstrap.js" t="Include" />
+                    <e p="bootstrap.js.map" t="Include" />
+                    <e p="bootstrap.min.js" t="Include" />
+                    <e p="bootstrap.min.js.map" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="jquery" t="Include">
+                <e p="LICENSE.txt" t="Include" />
+                <e p="dist" t="Include">
+                  <e p="jquery.js" t="Include" />
+                  <e p="jquery.min.js" t="Include" />
+                  <e p="jquery.min.map" t="Include" />
+                </e>
+              </e>
+              <e p="jquery-validation" t="Include">
+                <e p="LICENSE.md" t="Include" />
+                <e p="dist" t="Include">
+                  <e p="additional-methods.js" t="Include" />
+                  <e p="additional-methods.min.js" t="Include" />
+                  <e p="jquery.validate.js" t="Include" />
+                  <e p="jquery.validate.min.js" t="Include" />
+                </e>
+              </e>
+              <e p="jquery-validation-unobtrusive" t="Include">
+                <e p="LICENSE.txt" t="Include" />
+                <e p="jquery.validate.unobtrusive.js" t="Include" />
+                <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="WebApps" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>
