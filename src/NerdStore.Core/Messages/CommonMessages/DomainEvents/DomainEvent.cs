@@ -1,7 +1,7 @@
-﻿using NerdStore.Core.Messages.NerdStore.Core.Messages;
-using System;
+﻿using System;
+using NerdStore.Core.Messages.NerdStore.Core.Messages;
 
-namespace NerdStore.Core.DomainObjects
+namespace NerdStore.Core.Messages.CommonMessages.DomainEvents
 {
     public class DomainEvent : Event
     {
