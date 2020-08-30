@@ -20,7 +20,9 @@ namespace NerdStore.Vendas.Data
         }
 
         public DbSet<Pedido> Pedidos { get; set; }
+
         public DbSet<PedidoItem> PedidoItems { get; set; }
+
         public DbSet<Voucher> Vouchers { get; set; }
 
 
@@ -39,7 +41,8 @@ namespace NerdStore.Vendas.Data
                 }
             }
 
-            var sucesso = await base.SaveChangesAsync() > 0;
+            bool sucesso = await base.SaveChangesAsync() > 0;
+
             if (sucesso) await _mediatorHandler.PublicarEventos(this);
 
             return sucesso;

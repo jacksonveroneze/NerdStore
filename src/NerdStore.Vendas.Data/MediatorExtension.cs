@@ -1,7 +1,9 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using NerdStore.Core.Mediator;
 using NerdStore.Core.DomainObjects;
+using NerdStore.Core.Messages.NerdStore.Core.Messages;
 
 namespace NerdStore.Vendas.Data
 {
@@ -13,7 +15,7 @@ namespace NerdStore.Vendas.Data
                 .Entries<Entity>()
                 .Where(x => x.Entity.Notificacoes != null && x.Entity.Notificacoes.Any());
 
-            var domainEvents = domainEntities
+            IList<Event> domainEvents = domainEntities
                 .SelectMany(x => x.Entity.Notificacoes)
                 .ToList();
 
@@ -21,9 +23,9 @@ namespace NerdStore.Vendas.Data
                 .ForEach(entity => entity.Entity.LimparEventos());
 
             var tasks = domainEvents
-                .Select(async (domainEvent) => {
-                    await mediator.PublicarEvento(domainEvent);
-                });
+                .Select(async (domainEvent) =>
+                    await mediator.PublicarEvento(domainEvent)
+                );
 
             await Task.WhenAll(tasks);
         }
