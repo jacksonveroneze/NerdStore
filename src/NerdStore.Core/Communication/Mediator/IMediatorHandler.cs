@@ -3,7 +3,7 @@ using NerdStore.Core.Messages;
 using NerdStore.Core.Messages.CommonMessages.Notifications;
 using NerdStore.Core.Messages.NerdStore.Core.Messages;
 
-namespace NerdStore.Core.Mediator
+namespace NerdStore.Core.Communication.Mediator
 {
     public interface IMediatorHandler
     {

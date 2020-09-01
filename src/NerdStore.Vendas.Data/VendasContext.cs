@@ -4,7 +4,7 @@ using NerdStore.Vendas.Domain;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using NerdStore.Core.Mediator;
+using NerdStore.Core.Communication.Mediator;
 using NerdStore.Core.Messages.NerdStore.Core.Messages;
 
 namespace NerdStore.Vendas.Data

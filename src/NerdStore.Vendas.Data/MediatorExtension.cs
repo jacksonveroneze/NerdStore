@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using NerdStore.Core.Mediator;
+using NerdStore.Core.Communication.Mediator;
 using NerdStore.Core.DomainObjects;
 using NerdStore.Core.Messages.NerdStore.Core.Messages;
 

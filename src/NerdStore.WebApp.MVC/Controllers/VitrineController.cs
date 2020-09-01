@@ -10,7 +10,9 @@ namespace NerdStore.WebApp.MVC.Controllers
         private readonly IProdutoAppService _produtoAppService;
 
         public VitrineController(IProdutoAppService produtoAppService)
-            => _produtoAppService = produtoAppService;
+        {
+            _produtoAppService = produtoAppService;
+        }
 
         [HttpGet]
         [Route("")]
