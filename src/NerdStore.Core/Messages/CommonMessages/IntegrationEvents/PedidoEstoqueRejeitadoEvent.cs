@@ -1,15 +1,14 @@
 ﻿using System;
-using NerdStore.Core.Messages;
 
-namespace NerdStore.Vendas.Application.Commands
+namespace NerdStore.Core.Messages.CommonMessages.IntegrationEvents
 {
-    public class FinalizarPedidoCommand : Command
+    public class PedidoEstoqueRejeitadoEvent : IntegrationEvent
     {
         public Guid PedidoId { get; private set; }
 
         public Guid ClienteId { get; private set; }
 
-        public FinalizarPedidoCommand(Guid pedidoId, Guid clienteId)
+        public PedidoEstoqueRejeitadoEvent(Guid pedidoId, Guid clienteId)
         {
             AggregateId = pedidoId;
             PedidoId = pedidoId;

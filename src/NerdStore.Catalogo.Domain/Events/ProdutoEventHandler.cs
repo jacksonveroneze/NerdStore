@@ -9,6 +9,7 @@ namespace NerdStore.Catalogo.Domain.Events
     public class ProdutoEventHandler :
         INotificationHandler<ProdutoAbaixoEstoqueEvent>,
         INotificationHandler<PedidoIniciadoEvent>,
+        INotificationHandler<PedidoProcessamentoCanceladoEvent>
     {
         private readonly IProdutoRepository _produtoRepository;
         private readonly IEstoqueService _estoqueService;
@@ -24,9 +25,9 @@ namespace NerdStore.Catalogo.Domain.Events
             Produto produto = await _produtoRepository.ObterPorId(notification.AggregateId);
         }
 
-        public async Task Handle(PedidoIniciadoEvent notification, CancellationToken cancellationToken)
+        public async Task Handle(PedidoIniciadoEvent message, CancellationToken cancellationToken)
         {
-            var result = await _estoqueService.DebitarListaProdutosPedido(notification.ProdutosPedido);
+            bool result = await _estoqueService.DebitarListaProdutosPedido(message.ProdutosPedido);
 
             if (result)
             {
@@ -37,5 +38,8 @@ namespace NerdStore.Catalogo.Domain.Events
                 await _mediatorHandler.PublicarEvento(new PedidoEstoqueRejeitadoEvent(message.PedidoId, message.ClienteId));
             }
         }
+
+        public async Task Handle(PedidoProcessamentoCanceladoEvent notification, CancellationToken cancellationToken)
+            => await _estoqueService.ReporListaProdutosPedido(notification.ProdutosPedido);
     }
 }
